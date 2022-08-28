@@ -1,0 +1,19 @@
+NoitaWheel - AHK script to make Noita playable with a Logitech G27
+
+I can't imagine a lot of people will have a use for this script, but life is full of surprises.  This is the script I use when I stream Noita at https://www.twitch.tv/clankotron - I hope to be able to improve the script to be more generic so that myself and others can more easily re-map wheel controls. If you plan to modify this script for your own use, I recommend also checking out my repo for an on-screen wheel control visualizer at https://github.com/slagrasta/OnscreenWheel
+
+This script assumes you have the full Logitech G27 package of wheel, pedals, and shifter. It also makes lots of assumptions about joystick index, model, game resolution, etc. that I hope to abstract out in future versions. The script has four different modes that it operates in, selected by the red buttons on the shifter (from left to right):
+
+Gameplay Mode
+This mode is intended for general gameplay use. It uses the steering wheel to orbit the reticule around the player for aiming and the pedals to move left and right (clutch and gas respectively). Levitate is bound to left paddle, shoot is bound to the right paddle. Tool/wand selection uses the shifter - neutral selects the first slot, first gear selects the second slot, etc, and reverse selects the 8th slot.
+
+Swap Mode
+This mode is intended for when the player has chosen to pick up a wand and is in the menu to select which slot to put it into. The buttons at the top of the shifter (above the dpad) are used to select which slot to put the new wand into. Since these buttons are unmapped in Gameplay mode, it is possible that future iterations of this script will remove swap mode and simply activate this mode's mappings in Gameplay mode.
+
+Wand Edit Mode
+This is the mode used to move spells around on your wands. It uses some best guesses to navigate around the UI, but due to inconsistent sizing of UI elements, it still needs a lot of work to support more cases. In this mode, the buttons at the top of the shifter are used to move the cursor around, and the left paddle is left mouse. Press the up or down buttons to cycle from the script's best guesses about where your wands & inventory are, and left / right to bump the cursor one "spell" left or right.
+
+Disabled Mode
+This mode will disable all other functionality so that you can do normal mouse movements, adjust the wheels / pedals / etc without causing any gameplay actions.
+
+At any point, press F12 to exit the script.
